@@ -1,5 +1,12 @@
-from model import School
+from model.Entity import *
+from model.School import *
+class edulogic:
 
-def CreateSchool(info_dic):
-    s = School()
-    s.assing_var(info_dic)
+    def __init__(self):
+        self.educations = []
+
+    def CreateSchool(self, info_dic):
+        s = School()
+        s.assing_var(info_dic)
+        s.printSchool()
+        self.educations.append(s)

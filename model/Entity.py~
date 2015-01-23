@@ -1,0 +1,5 @@
+class Enitty:
+    def __init__(self):
+        self.name = ''
+        self.title = ''
+        self.description
