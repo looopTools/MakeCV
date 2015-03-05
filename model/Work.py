@@ -1,10 +1,13 @@
-class Work:
+from entity import entity
 
-    def __init__(self):
-        self.work = ''
-        self.startMonth = -1
-        self.endMonth = -1
-        self.startYear = -1
-        self.endYear = -1
-        self.title = ''
-        self.description = ''
+class work(entity):
+
+    def __init__(self, name):
+        entity.__init__(self, name)
+
+    def printAll(self):
+        print(self.name)
+        print(self.startDate)
+        print(self.endDate)
+        print(self.title)
+        print(self.desc)
