@@ -1,0 +1,3 @@
+from entity import entity
+
+class work(entity):
